@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="git://github.com" />
+  <remote name="private" fetch="ssh://git@github.com" />
+
+  <remove-project name="platform/frameworks/base"/>
+  <remove-project name="platform/system/sepolicy"/>
+  <remove-project name="platform/packages/apps/Settings"/>
+  <project path="frameworks/base" name="OrderLab/leaseos_frameworks_base" remote="private" revision="leaseos-7.1.2_r2"/>
+  <project path="system/sepolicy" name="OrderLab/leaseos_system_sepolicy" remote="private" revision="leaseos-7.1.2_r2"/>
+  <project path="packages/apps/Settings" name="OrderLab/leaseos_packages_apps_Settings" remote="private" revision="leaseos-7.1.2_r2"/>
+</manifest>
