@@ -31,11 +31,13 @@ Start Working
 ------------
 When initially checked out, all the repositories are in a detached state. In order
 to work on our custom repositories, we need to set the branch to the remote
-branch. Type the following command:
+branch. Type the following command to do it for all:
 
 ```
-$ git checkout --track private/leaseos-7.1.2_r2
+$ repo forall -g leaseos -c 'git checkout --track private/leaseos-7.1.2_r2'
 ```
+
+Or `git checkout --track private/leaseos-7.1.2_r2` within an individual project repo.
 
 **NOTE:** this is currently only intended to be used by project members of Lease OS
 as the manifest file refers to project repositories that are currently hosted 
