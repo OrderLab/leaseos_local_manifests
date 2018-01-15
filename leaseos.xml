@@ -11,4 +11,6 @@
   <project path="system/sepolicy" name="OrderLab/leaseos_system_sepolicy" remote="private" groups="leaseos" revision="leaseos-7.1.2_r2"/>
   <project path="packages/apps/Settings" name="OrderLab/leaseos_packages_apps_Settings" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
   <project path="device/google/marlin" name="OrderLab/leaseos_device_google_marlin" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
+  <project path="vendor/google_devices/marlin" name="OrderLab/vendor_google_devices_marlin" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
+  <project path="vendor/qcom/marlin" name="OrderLab/vendor_qcom_marlin" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
 </manifest>
