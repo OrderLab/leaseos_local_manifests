@@ -7,7 +7,7 @@
   <remove-project name="platform/system/sepolicy"/>
   <remove-project name="platform/packages/apps/Settings"/>
   <remove-project name="device/google/marlin"/>
-  <remove-project name="libcore"/>
+  <remove-project name="platform/libcore"/>
   <project path="frameworks/base" name="OrderLab/leaseos_frameworks_base" remote="private" groups="leaseos" revision="leaseos-7.1.2_r2"/>
   <project path="system/sepolicy" name="OrderLab/leaseos_system_sepolicy" remote="private" groups="leaseos" revision="leaseos-7.1.2_r2"/>
   <project path="packages/apps/Settings" name="OrderLab/leaseos_packages_apps_Settings" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
