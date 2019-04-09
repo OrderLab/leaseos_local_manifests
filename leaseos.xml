@@ -6,13 +6,9 @@
   <remove-project name="platform/frameworks/base"/>
   <remove-project name="platform/system/sepolicy"/>
   <remove-project name="platform/packages/apps/Settings"/>
-  <remove-project name="device/google/marlin"/>
   <remove-project name="platform/libcore"/>
   <project path="frameworks/base" name="OrderLab/leaseos_frameworks_base" remote="private" groups="leaseos" revision="leaseos-7.1.2_r2"/>
   <project path="system/sepolicy" name="OrderLab/leaseos_system_sepolicy" remote="private" groups="leaseos" revision="leaseos-7.1.2_r2"/>
   <project path="packages/apps/Settings" name="OrderLab/leaseos_packages_apps_Settings" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
-  <project path="device/google/marlin" name="OrderLab/leaseos_device_google_marlin" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
   <project path="libcore" name="OrderLab/leaseos_libcore" remote="private" groups="leaseos" revision="leaseos-7.1.2_r2"/>
-  <project path="vendor/google_devices/marlin" name="OrderLab/vendor_google_devices_marlin" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
-  <project path="vendor/qcom/marlin" name="OrderLab/vendor_qcom_marlin" groups="leaseos" remote="private" revision="leaseos-7.1.2_r2"/>
 </manifest>

@@ -12,9 +12,19 @@ To use it, first follow the standard way of getting a
 the branch that matches the Lease OS release version, e.g., **android-7.1.2_r2**.
 Then switch to the root of the source tree:
 
+For **private contributors**:
 ```
 $ cd .repo
 $ git clone git@github.com:OrderLab/leaseos_local_manifests.git local_manifests
+$ git checkout private
+$ cd ..
+$ repo sync
+```
+
+For **public user**:
+```
+$ cd .repo
+$ git clone https://github.com/OrderLab/leaseos_local_manifests.git local_manifests
 $ cd ..
 $ repo sync
 ```
@@ -26,6 +36,16 @@ all the repositories defined in this local manifest by specifying the group
 ```
 $ repo forall -g leaseos -c 'git status'
 ```
+
+Additional Note for Public User
+--------------------------------
+The device repos are proprietary and copyrighted by the vendors. Therefore they 
+are excluded from the manifest file in our public branch. You will need to clone these 
+device-specific repos into the source tree. For example, for Google Pixel XL
+phone, you need to find the device drivers for `google_marlin` and proprietary 
+blobs extracted from the factory image. You will also need to find the Google 
+Apps Suite to be included in the custom image (this can also be installed 
+separately later).
 
 Start Working
 ------------
@@ -39,7 +59,4 @@ $ repo forall -g leaseos -c 'git checkout --track private/leaseos-7.1.2_r2'
 
 Or `git checkout --track private/leaseos-7.1.2_r2` within an individual project repo.
 
-**NOTE:** this is currently only intended to be used by project members of Lease OS
-as the manifest file refers to project repositories that are currently hosted 
-as private.
 
