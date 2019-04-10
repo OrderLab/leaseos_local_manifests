@@ -54,9 +54,9 @@ to work on our custom repositories, we need to set the branch to the remote
 branch. Type the following command to do it for all:
 
 ```
-$ repo forall -g leaseos -c 'git checkout --track private/leaseos-7.1.2_r2'
+$ repo forall -g leaseos -c 'git checkout --track public/leaseos-7.1.2_r2'
 ```
 
-Or `git checkout --track private/leaseos-7.1.2_r2` within an individual project repo.
+Or `git checkout --track public/leaseos-7.1.2_r2` within an individual project repo.
 
 
