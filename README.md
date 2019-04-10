@@ -54,10 +54,16 @@ When initially checked out, all the repositories are in a detached state. In ord
 to work on our custom repositories, we need to set the branch to the remote
 branch. Type the following command to do it for all:
 
+For **public user**:
 ```
 $ repo forall -g leaseos -c 'git checkout --track public/leaseos-7.1.2_r2'
 ```
 
 Or `git checkout --track public/leaseos-7.1.2_r2` within an individual project repo.
 
+For **private contributors**:
+```
+$ repo forall -g leaseos -c 'git checkout --track private/leaseos-7.1.2_r2'
+```
 
+Or `git checkout --track private/leaseos-7.1.2_r2` within an individual project repo.
