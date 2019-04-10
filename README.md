@@ -12,6 +12,14 @@ To use it, first follow the standard way of getting a
 the branch that matches the Lease OS release version, e.g., **android-7.1.2_r2**.
 Then switch to the root of the source tree:
 
+For **public user**:
+```
+$ cd .repo
+$ git clone https://github.com/OrderLab/leaseos_local_manifests.git local_manifests
+$ cd ..
+$ repo sync
+```
+
 For **private contributors**:
 ```
 $ cd .repo
@@ -21,13 +29,6 @@ $ cd ..
 $ repo sync
 ```
 
-For **public user**:
-```
-$ cd .repo
-$ git clone https://github.com/OrderLab/leaseos_local_manifests.git local_manifests
-$ cd ..
-$ repo sync
-```
 
 After the sync finishes, you can use the `repo` tool to apply a command to 
 all the repositories defined in this local manifest by specifying the group
